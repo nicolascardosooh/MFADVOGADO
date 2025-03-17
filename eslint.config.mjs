@@ -13,4 +13,10 @@ const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
 ];
 
+eslintConfig.rules = {
+  "no-console": ["warn"], // Adiciona uma regra personalizada
+  "react/react-in-jsx-scope": "off", // Outra regra personalizada
+};
+
+
 export default eslintConfig;
