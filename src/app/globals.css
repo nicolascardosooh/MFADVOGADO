@@ -25,3 +25,23 @@ body {
   color: var(--foreground);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* Adicione isso ao seu arquivo de estilos globais */
+.will-change-transform {
+  will-change: transform;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+@layer utilities {
+  .perspective {
+    perspective: 1000px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
