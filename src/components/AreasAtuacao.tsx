@@ -24,6 +24,7 @@ const areasAtuacao = [
             "Transação Tributária",
             "Processo Administrativo Tributário",
             "PERSE",
+            "Prescrição e decadência tributária", 
         ]
     },
     {
@@ -43,7 +44,40 @@ const areasAtuacao = [
             "Reintegração e Reivindicão de posse",
             "Interdito proibitório",
             "Unificação de imóveis",
-            "",
+        ]
+    },
+    {
+        id: "familia",
+        icon: FaUsers,
+        title: "Direito de Família e Sucessões",
+        color: "from-amber-700 to-amber-800",
+        services: [
+            "INVENTÁRIO judicial e extrajudicial",
+            "Casamento",
+            "Divórcio",
+            "Alimentos",
+            "Guarda",
+            "Paternidade",
+            "Adoção",
+            "Filiação Socioafetiva",
+            "Alienação Parental",
+            "Interdição e curatela",
+            "Testamento"
+        ]
+    },
+    {
+        id: "empresarial",
+        icon: FaBuilding,
+        title: "Direito Empresarial",
+        color: "from-amber-700 to-amber-800",
+        services: [
+            "HOLDING",
+            "Contratos",
+            "Prevenção",
+            "Diligências",
+            "Desconsideração da personalidade jurídica",
+            "Execução de títulos judiciais e extrajudiciais",
+            "Ação monitória"
         ]
     },
     {
@@ -87,40 +121,16 @@ const areasAtuacao = [
             "Audiência de custódia",
             "Liberdade Provisória",
             "Habeas Corpus",
-            "Revogação de prisão"
+            "Revogação de prisão",
+            "Acompanhamento do PEC",
+            "Ação penal fiscal",
+            "Termo circunstanciado",
+            "Maria da Penha",
+            "Crimes de trânsito",
         ]
     },
-    {
-        id: "familia",
-        icon: FaUsers,
-        title: "Direito de Família e Sucessões",
-        color: "from-amber-700 to-amber-800",
-        services: [
-            "INVENTÁRIO judicial e extrajudicial",
-            "Casamento",
-            "Divórcio",
-            "Alimentos",
-            "Guarda",
-            "Paternidade",
-            "Adoção",
-            "Filiação Socioafetiva",
-            "Alienação Parental",
-            "Interdição e curatela",
-            "Testamento"
-        ]
-    },
-    {
-        id: "empresarial",
-        icon: FaBuilding,
-        title: "Direito Empresarial",
-        color: "from-amber-700 to-amber-800",
-        services: [
-            "ROLDING",
-            "Contratos",
-            "Prevenção",
-            "Diligências"
-        ]
-    }
+  
+  
 ];
 
 export default function AreasAtuacao() {

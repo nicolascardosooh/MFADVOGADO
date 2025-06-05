@@ -2,11 +2,16 @@ import nodemailer from 'nodemailer';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'smtp.gmail.com',
+  port: 587,
+  secure: false,
   auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
+    user: 'nicolascardoso1989@gmail.com',
+    pass: process.env.EMAIL_PASS || 'sua-senha-app',
   },
+  tls: {
+    rejectUnauthorized: false // Use apenas em desenvolvimento
+  }
 });
 
 const sendEmail = async (nome: string, email: string, mensagem: string, telefone: string) => {
