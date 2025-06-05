@@ -1,34 +1,45 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaEnvelope,  FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaWhatsapp,
+  FaInstagram,
+  FaFacebook,
+} from "react-icons/fa";
 import Image from "next/image";
 
 const advogados = [
   {
     id: 1,
-    nome: "Dr. Maicon Fabiano Cardoso",
+    nome: "Adv. Maicon Fabiano Cardoso",
     oab: "OAB/RS 121.195",
     foto: "/images/pai.avif",
     especialidades: ["Direito Civil", "Direito Trabalhista", "Direito Penal"],
-    descricao: "Advogado com vasta experiência em causas complexas e casos de alta relevância.",
+    descricao:
+      "Advogado com vasta experiência em causas complexas e casos de alta relevância.",
     linkedin: "#",
     email: "maiconfabianoadv@gmail.com",
     whatsapp: "5551980483951",
     instagram: "https://www.instagram.com/advogado.maiconfabiano/",
-    facebook: "https://www.facebook.com/maicon.cardoso.796569"
+    facebook: "https://www.facebook.com/maicon.cardoso.796569",
   },
   {
     id: 2,
-    nome: "Dr. Rodrigo S. de Souza",
+    nome: "Adv. Rodrigo Silva de Souza",
     oab: "OAB/RS 125.182",
     foto: "/images/rodrigo.avif",
-    especialidades: ["Direito Empresarial", "Direito de Família", "Direito Civil"],
-    descricao: "Especialista em direito empresarial e soluções jurídicas inovadoras.",
+    especialidades: [
+      "Direito Empresarial",
+      "Direito de Família",
+      "Direito Civil",
+    ],
+    descricao:
+      "Especialista em direito empresarial e soluções jurídicas inovadoras.",
     linkedin: "#",
-    email: "SilvaDireitoRS@gmail.com",
+    email: "maiconfabianoadv@gmail.com",
     whatsapp: "5551980483951",
-    instagram: ""
-  }
+    instagram: "",
+  },
 ];
 
 export default function Equipe() {
@@ -36,10 +47,13 @@ export default function Equipe() {
     <section className=" bg-gradient-to-b from-stone-50 to-stone-100 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 2px 2px, #1e4493 1px, transparent 0)`,
-          backgroundSize: '40px 40px'
-        }} />
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `radial-gradient(circle at 2px 2px, #1e4493 1px, transparent 0)`,
+            backgroundSize: "40px 40px",
+          }}
+        />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -56,8 +70,8 @@ export default function Equipe() {
           </h2>
           <div className="w-24 h-1 bg-amber-700 mx-auto mb-6"></div>
           <p className="text-xl text-stone-700 max-w-3xl mx-auto font-light">
-            Profissionais altamente qualificados e comprometidos com a excelência
-            em serviços jurídicos.
+            Profissionais altamente qualificados e comprometidos com a
+            excelência em serviços jurídicos.
           </p>
         </motion.div>
 
@@ -90,7 +104,9 @@ export default function Equipe() {
 
                   {/* Name Overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-2xl font-serif font-semibold mb-1">{advogado.nome}</h3>
+                    <h3 className="text-2xl font-serif font-semibold mb-1">
+                      {advogado.nome}
+                    </h3>
                     <p className="text-amber-300 font-medium">{advogado.oab}</p>
                   </div>
                 </div>
@@ -98,7 +114,6 @@ export default function Equipe() {
                 {/* Content Section */}
                 <div className="p-6">
                   {/* Especialidades */}
-               
 
                   {/* Contact Buttons */}
                   <div className="flex gap-4">
@@ -111,7 +126,9 @@ export default function Equipe() {
                       <FaWhatsapp className="mr-2" /> WhatsApp
                     </a>
                     <a
-                      href={`mailto:${advogado.email}`}
+                      href={`https://mail.google.com/mail/?view=cm&fs=1&to=${advogado.email}&su=Assunto%20do%20Email&body=Escreva%20sua%20mensagem%20aqui`}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex-1 inline-flex items-center justify-center px-4 py-3 bg-amber-800 text-amber-50 rounded-md hover:bg-amber-700 transition-colors duration-300"
                     >
                       <FaEnvelope className="mr-2" /> E-mail
@@ -158,8 +175,9 @@ export default function Equipe() {
             Precisa de Assessoria Jurídica?
           </h3>
           <p className="text-stone-700 mb-8 max-w-2xl mx-auto">
-            Nossa equipe está pronta para auxiliar você em suas questões jurídicas
-            com profissionalismo e dedicação, através de atendimento presencial ou on-line.
+            Nossa equipe está pronta para auxiliar você em suas questões
+            jurídicas com profissionalismo e dedicação, através de atendimento
+            presencial ou on-line.
           </p>
           <a
             href="https://api.whatsapp.com/send?phone=5551980483951"
@@ -168,8 +186,17 @@ export default function Equipe() {
             className="inline-flex items-center px-8 py-3 bg-amber-800 text-amber-50 rounded-md hover:bg-amber-700 transition-colors duration-300 shadow-md hover:shadow-lg border border-amber-700/30"
           >
             <span className="mr-2">Fale com um Advogado</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fillRule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              />
             </svg>
           </a>
         </motion.div>

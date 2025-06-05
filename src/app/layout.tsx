@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="min-h-screen">{children}</main>
         <Script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></Script>
         <a
-          href="https://wa.me/5599999999999" // substitua pelo seu número com DDI + DDD
+          href="https://wa.me/5551980483951" // substitua pelo seu número com DDI + DDD
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition duration-300 z-50"
