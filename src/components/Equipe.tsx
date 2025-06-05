@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaEnvelope, FaBalanceScale, FaGavel, FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaEnvelope,  FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
 import Image from "next/image";
 
 const advogados = [
@@ -33,7 +33,7 @@ const advogados = [
 
 export default function Equipe() {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-b from-stone-50 to-stone-100 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute inset-0" style={{
@@ -51,13 +51,11 @@ export default function Equipe() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <div className="inline-flex items-center justify-center p-2 bg-blue-50 rounded-full mb-4">
-            <FaBalanceScale className="w-6 h-6 text-blue-600" />
-          </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl font-serif font-semibold text-stone-900 mb-4">
             Nossa Equipe
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <div className="w-24 h-1 bg-amber-700 mx-auto mb-6"></div>
+          <p className="text-xl text-stone-700 max-w-3xl mx-auto font-light">
             Profissionais altamente qualificados e comprometidos com a excelência
             em serviços jurídicos.
           </p>
@@ -74,7 +72,7 @@ export default function Equipe() {
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className="relative group"
             >
-              <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden">
+              <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden">
                 {/* Image Section */}
                 <div className="relative h-96 overflow-hidden">
                   <Image
@@ -83,7 +81,7 @@ export default function Equipe() {
                     fill
                     quality={90}
                     placeholder="blur"
-                    blurDataURL={advogado.foto} // coloque uma versão pequena da imagem aqui
+                    blurDataURL={advogado.foto}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover object-center transform group-hover:scale-105 transition-transform duration-500"
                   />
@@ -92,14 +90,15 @@ export default function Equipe() {
 
                   {/* Name Overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                    <h3 className="text-2xl font-bold mb-1">{advogado.nome}</h3>
-                    <p className="text-blue-300 font-medium">{advogado.oab}</p>
+                    <h3 className="text-2xl font-serif font-semibold mb-1">{advogado.nome}</h3>
+                    <p className="text-amber-300 font-medium">{advogado.oab}</p>
                   </div>
                 </div>
 
                 {/* Content Section */}
-                <div className="p-6 space-y-6">
+                <div className="p-6">
                   {/* Especialidades */}
+               
 
                   {/* Contact Buttons */}
                   <div className="flex gap-4">
@@ -107,42 +106,41 @@ export default function Equipe() {
                       href={`https://wa.me/${advogado.whatsapp}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-colors duration-300"
+                      className="flex-1 inline-flex items-center justify-center px-4 py-3 bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors duration-300"
                     >
-                      <div className="flex items-center flex-col">
-                        <FaWhatsapp /> WhatsApp
-
-                      </div>
+                      <FaWhatsapp className="mr-2" /> WhatsApp
                     </a>
                     <a
                       href={`mailto:${advogado.email}`}
-                      className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors duration-300"
+                      className="flex-1 inline-flex items-center justify-center px-4 py-3 bg-amber-800 text-amber-50 rounded-md hover:bg-amber-700 transition-colors duration-300"
                     >
-                      <div className="flex items-center flex-col">
-                        <FaEnvelope /> E-mail
-                      </div>
+                      <FaEnvelope className="mr-2" /> E-mail
                     </a>
                   </div>
                 </div>
 
-                {advogado.id === 1 && (
+                {advogado.instagram && (
                   <div className="absolute top-4 right-4 flex gap-2">
                     <a
-                      href={`mailto:${advogado.instagram}`}
-                      className="p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-blue-600 transition-colors duration-300 group"
+                      href={advogado.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-amber-700 transition-colors duration-300 group"
                     >
-                      <FaInstagram className="w-5 h-5 text-blue-600 group-hover:text-black" />
+                      <FaInstagram className="w-5 h-5 text-amber-800 group-hover:text-white" />
                     </a>
-                    <a
-                      href={`mailto:${advogado.facebook}`}
-                      className="p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-blue-600 transition-colors duration-300 group"
-                    >
-                      <FaFacebook className="w-5 h-5 text-blue-600 group-hover:text-black" />
-                    </a>
+                    {advogado.facebook && (
+                      <a
+                        href={advogado.facebook}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 bg-white/90 backdrop-blur-sm rounded-full hover:bg-amber-700 transition-colors duration-300 group"
+                      >
+                        <FaFacebook className="w-5 h-5 text-amber-800 group-hover:text-white" />
+                      </a>
+                    )}
                   </div>
                 )}
-
-
               </div>
             </motion.div>
           ))}
@@ -156,25 +154,22 @@ export default function Equipe() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="text-center mt-20"
         >
-          <div className="inline-flex items-center justify-center p-4 bg-blue-50 rounded-full mb-6">
-            <FaGavel className="w-8 h-8 text-blue-600" />
-          </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          <h3 className="text-2xl font-serif font-semibold text-stone-900 mb-4">
             Precisa de Assessoria Jurídica?
           </h3>
-          <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-stone-700 mb-8 max-w-2xl mx-auto">
             Nossa equipe está pronta para auxiliar você em suas questões jurídicas
             com profissionalismo e dedicação.
           </p>
           <a
-            href="https://wa.me/5551980483951"
+            href="https://api.whatsapp.com/send?phone=5551980483951"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center px-8 py-3 bg-amber-800 text-amber-50 rounded-md hover:bg-amber-700 transition-colors duration-300 shadow-md hover:shadow-lg border border-amber-700/30"
           >
-            Fale com um Advogado
-            <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            <span className="mr-2">Fale com um Advogado</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+              <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
             </svg>
           </a>
         </motion.div>

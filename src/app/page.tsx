@@ -9,7 +9,6 @@ import Equipe from "@/components/Equipe";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-  const sobreRef = useRef<HTMLDivElement | null>(null);
   const atuacaoRef = useRef<HTMLDivElement | null>(null);
   const equipeRef = useRef<HTMLDivElement | null>(null);
   const contatoRef = useRef<HTMLDivElement | null>(null);

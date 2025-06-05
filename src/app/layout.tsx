@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { FaWhatsapp } from "react-icons/fa";
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: "MF Advogado",
@@ -15,7 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="pt-BR">
       <body className="bg-gray-100 text-gray-900">
         <main className="min-h-screen">{children}</main>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <Script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></Script>
         <a
           href="https://wa.me/5599999999999" // substitua pelo seu número com DDI + DDD
           target="_blank"
