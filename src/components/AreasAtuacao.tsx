@@ -26,6 +26,9 @@ const areasAtuacao = [
             "Processo Administrativo Tributário",
             "PERSE",
             "Prescrição e decadência tributária", 
+            "Mapa Fiscal",
+            "Imposto de Renda Pessoa Física e Jurídica",
+            "Malha Fina"
         ]
     },
     {
@@ -78,7 +81,8 @@ const areasAtuacao = [
             "Diligências",
             "Desconsideração da personalidade jurídica",
             "Execução de títulos judiciais e extrajudiciais",
-            "Ação monitória"
+            "Ação monitória",
+            "Abertura e fechamento de empresas"
         ]
     },
     {

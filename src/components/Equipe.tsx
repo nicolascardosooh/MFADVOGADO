@@ -159,7 +159,7 @@ export default function Equipe() {
           </h3>
           <p className="text-stone-700 mb-8 max-w-2xl mx-auto">
             Nossa equipe está pronta para auxiliar você em suas questões jurídicas
-            com profissionalismo e dedicação.
+            com profissionalismo e dedicação, através de atendimento presencial ou on-line.
           </p>
           <a
             href="https://api.whatsapp.com/send?phone=5551980483951"

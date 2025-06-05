@@ -22,14 +22,13 @@ export default function Footer() {
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
               <Image
-                src="/images/logoof.png"
+                src="/images/logo2.jpg"
                 alt="MF LOGO"
-                width={50}
-                height={50}
+                width={80}
+                height={80}
                 className="rounded-full"
               />
               <h3 className="text-2xl font-serif font-semibold text-amber-100">
-                MF ADVOGADO
               </h3>
             </div>
             <p className="text-stone-400 text-sm leading-relaxed">
