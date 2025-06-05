@@ -11,6 +11,20 @@ import {
 
 const areasAtuacao = [
     {
+        id: "tributario",
+        icon: FaBriefcase,
+        title: "Direito Tributário",
+        color: "from-amber-700 to-amber-800",
+        services: [
+            "Execuções fiscais",
+            "Restituição ITCMD Previdência Privada",
+            "Rolding",
+            "Planejamento Tributário",
+            "Parcelamento de Dívida Ativa",
+            "Mandado de Segurança",
+        ]
+    },
+    {
         id: "trabalhista",
         icon: FaBriefcase,
         title: "Direito Trabalhista",

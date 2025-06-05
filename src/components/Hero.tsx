@@ -52,7 +52,16 @@ export default function Hero({ scrollToContact }: HeroProps) {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl md:text-2xl text-amber-100/80 max-w-3xl mx-auto font-light"
           >
-            Soluções jurídicas personalizadas com rigor técnico e compromisso ético
+           Especialista em Direito Tributário
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            className="text-xl md:text-2xl text-amber-100/80 max-w-3xl mx-auto font-light"
+          >
+            Soluções jurídicas multidisciplinares e personalizadas
           </motion.p>
 
           <motion.div

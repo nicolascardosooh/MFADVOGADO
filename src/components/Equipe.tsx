@@ -26,7 +26,7 @@ const advogados = [
     descricao: "Especialista em direito empresarial e soluções jurídicas inovadoras.",
     linkedin: "#",
     email: "SilvaDireitoRS@gmail.com",
-    whatsapp: "5551986364933",
+    whatsapp: "5551980483951",
     instagram: ""
   }
 ];
