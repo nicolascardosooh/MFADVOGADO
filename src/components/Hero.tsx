@@ -27,7 +27,7 @@ export default function Hero({ scrollToContact }: HeroProps) {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          <div className="relative w-48 h-48 mx-auto mb-2">
+          <div className="relative w-64 h-64 mx-auto mb-2">
             <Image
               src="/images/logoof.png"
               alt="Logo"
@@ -52,7 +52,7 @@ export default function Hero({ scrollToContact }: HeroProps) {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl md:text-2xl text-amber-100/80 max-w-3xl mx-auto font-light"
           >
-           Especialista em Direito Tributário
+           Especialista em Direito Tributário e Imobiliário
           </motion.p>
 
           <motion.p

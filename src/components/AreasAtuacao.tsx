@@ -18,10 +18,32 @@ const areasAtuacao = [
         services: [
             "Execuções fiscais",
             "Restituição ITCMD Previdência Privada",
-            "Rolding",
             "Planejamento Tributário",
             "Parcelamento de Dívida Ativa",
             "Mandado de Segurança",
+            "Transação Tributária",
+            "Processo Administrativo Tributário",
+            "PERSE",
+        ]
+    },
+    {
+        id: "imobiliario",
+        icon: FaBriefcase,
+        title: "Direito Imobiliário",
+        color: "from-amber-700 to-amber-800",
+        services: [
+            "USUCAPIÃO judicial e extrajudicial",
+            "Elaboração e análise de contratos de compra e venda de imóveis urbanos e ruraris",
+            "Assessoria em contratos de locação residencial e comercial",
+            "Regularização de imóveis e registros",
+            "Ações de despejo e cobrança de aluguéis",
+            "Assessoria em financiamentos e consórcios imobiliários",
+            "Análise de documentação imobiliária",
+            "Resolução de conflitos de condomínio",
+            "Reintegração e Reivindicão de posse",
+            "Interdito proibitório",
+            "Unificação de imóveis",
+            "",
         ]
     },
     {
@@ -71,9 +93,10 @@ const areasAtuacao = [
     {
         id: "familia",
         icon: FaUsers,
-        title: "Direito de Família",
+        title: "Direito de Família e Sucessões",
         color: "from-amber-700 to-amber-800",
         services: [
+            "INVENTÁRIO judicial e extrajudicial",
             "Casamento",
             "Divórcio",
             "Alimentos",
@@ -83,7 +106,6 @@ const areasAtuacao = [
             "Filiação Socioafetiva",
             "Alienação Parental",
             "Interdição e curatela",
-            "Inventário",
             "Testamento"
         ]
     },
@@ -93,6 +115,7 @@ const areasAtuacao = [
         title: "Direito Empresarial",
         color: "from-amber-700 to-amber-800",
         services: [
+            "ROLDING",
             "Contratos",
             "Prevenção",
             "Diligências"

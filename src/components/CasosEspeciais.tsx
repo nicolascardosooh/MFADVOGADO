@@ -6,10 +6,10 @@ import { RiMedicineBottleLine } from "react-icons/ri";
 const casos = [
   {
     id: "ame",
-    title: "AME - Atrofia Muscular Espinhal",
-    description: "A saúde é um direito constitucional. A atrofia muscular espinhal (AME) é uma doença genética rara com custo de tratamento elevado e urgente. Busque o tratamento imediato na justiça.",
+    title: "Medicamentos de alto custo",
+    description: "Tratamentos e procedimentos urgentes, e medicamentos de alto custo para pacientes que precisam continuar ou iniciar o tratamento, através de ação judicial com pedido liminar, seja ela contra planos de saúde ou SUS.",
     icon: FaDna,
-    color: "from-purple-600 to-indigo-600",
+    color: "from-purple-600 to-indigo-600", // Cor do header
     stats: [
       { label: "Taxa de Sucesso", value: "98%" },
       { label: "Tempo Médio", value: "72h" },
@@ -90,17 +90,6 @@ export default function CasosEspeciais() {
                     {caso.description}
                   </p>
 
-                  {/* Stats */}
-                  <div className="grid grid-cols-3 gap-4 border-t border-b border-stone-100 py-4">
-                    {caso.stats.map((stat, statIndex) => (
-                      <div key={statIndex} className="text-center">
-                        <div className="text-xl font-semibold text-amber-800">
-                          {stat.value}
-                        </div>
-                        <div className="text-xs text-stone-500 font-light">{stat.label}</div>
-                      </div>
-                    ))}
-                  </div>
 
                   {/* CTA */}
                   <div className="pt-2">

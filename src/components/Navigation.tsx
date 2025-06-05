@@ -42,17 +42,16 @@ export default function Navigation({ activeSection, scrollToSection, navigationI
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3">
               <Image
-                src="/images/logoof.png"
+                src="/images/logo2.jpg"
                 alt="Logo"
-                width={50}
-                height={120}
+                width={80}
+                height={80}
                 className="rounded-full transition-transform duration-300 hover:scale-105"
                 style={{ width: 'auto' }}
               />
-              <span className={`text-xl font-serif font-semibold tracking-wider ${
+              <span className={`text-xl font-sans font-semibold tracking-widest ${
                 isScrolled ? "text-amber-100" : "text-white"
               }`}>
-                MF Advogado
               </span>
             </div>
             <div className="flex space-x-10">
@@ -60,8 +59,9 @@ export default function Navigation({ activeSection, scrollToSection, navigationI
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.ref)}
-                  className={`relative px-3 py-2 text-sm font-serif tracking-wider transition-colors duration-300 hover:cursor-pointer ${
-                    isScrolled ? "text-amber-100" : "text-white"
+                  style={{ fontSize: '16px', fontFamily: 'revert' }}
+                  className={`relative tracking-wide font-light px-3 py-2 transition-colors duration-300 hover:cursor-pointer ${
+                    isScrolled ? "text-amber-100" : "text-amber-100"
                   } hover:text-amber-400`}
                 >
                   {item.label}
@@ -86,14 +86,13 @@ export default function Navigation({ activeSection, scrollToSection, navigationI
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-2">
               <Image
-                src="/images/logoof.png"
+                src="/images/logo2.jpg"
                 alt="Logo"
-                width={36}
-                height={36}
+                width={80}
+                height={80}
                 className="rounded-full"
               />
               <span className={`text-lg font-serif ${isScrolled ? "text-amber-100" : "text-white"}`}>
-                MF Advogado
               </span>
             </div>
             <button
@@ -120,13 +119,13 @@ export default function Navigation({ activeSection, scrollToSection, navigationI
                 <div className="flex justify-between items-center p-6 border-b border-stone-800">
                   <div className="flex items-center space-x-3">
                     <Image
-                      src="/images/logoof.png"
+                      src="/images/logo2.jpg"
                       alt="Logo"
-                      width={50}
-                      height={50}
+                      width={80}
+                      height={80}
                       className="rounded-full"
                     />
-                    <span className="text-xl font-serif text-amber-100">MF Advogado</span>
+                    <span className="text-xl font-serif text-amber-100"></span>
                   </div>
                   <button
                     onClick={() => setIsMobileMenuOpen(false)}
@@ -144,7 +143,7 @@ export default function Navigation({ activeSection, scrollToSection, navigationI
                         scrollToSection(item.ref);
                         setIsMobileMenuOpen(false);
                       }}
-                      className={`text-lg font-serif tracking-wide ${
+                      className={`text-lg tracking-wide ${
                         activeSection === item.id
                           ? "text-amber-400 border-b border-amber-400 pb-1"
                           : "text-amber-100"
