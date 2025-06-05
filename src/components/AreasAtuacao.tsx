@@ -127,6 +127,7 @@ const areasAtuacao = [
             "Termo circunstanciado",
             "Maria da Penha",
             "Crimes de trânsito",
+            "Descaminho e contrabando",
         ]
     },
   

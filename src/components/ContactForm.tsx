@@ -34,7 +34,8 @@ const ContactForm = () => {
       if (res.status === 200) {
         setStatus({
           type: 'success',
-          message: 'Mensagem enviada com sucesso! Entraremos em contato em breve.'
+          message: 'Mensagem enviada com sucesso! Entraremos em contato em breve.  Em caso de urgência, envie mensagem para o WhatsApp (51) 9-80483951 .'
+         
         });
         setNome('');
         setEmail('');
@@ -163,6 +164,16 @@ const ContactForm = () => {
               <p className="text-sm">{status.message}</p>
             </motion.div>
           )}
+        </AnimatePresence>
+        <AnimatePresence>
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              className={`rounded-md p-4 flex items-center space-x-2  text-amber-800`}
+            >
+              <p className="text-lg">Em caso de urgência, envie mensagem para o WhatsApp (51) 98048-3951 .</p>
+            </motion.div>
         </AnimatePresence>
       </motion.form>
     </div>
