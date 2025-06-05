@@ -114,7 +114,6 @@ export default function Equipe() {
                 {/* Content Section */}
                 <div className="p-6">
                   {/* Especialidades */}
-
                   {/* Contact Buttons */}
                   <div className="flex gap-4">
                     <a

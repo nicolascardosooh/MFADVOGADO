@@ -57,7 +57,7 @@ const areasAtuacao = [
         color: "from-amber-700 to-amber-800",
         services: [
             "INVENTÁRIO judicial e extrajudicial",
-            "Casamento",
+            "Reconhecimento e de solução de união estável",
             "Divórcio",
             "Alimentos",
             "Guarda",
@@ -66,7 +66,8 @@ const areasAtuacao = [
             "Filiação Socioafetiva",
             "Alienação Parental",
             "Interdição e curatela",
-            "Testamento"
+            "Testamento",
+            "Uso fruto",
         ]
     },
     {
