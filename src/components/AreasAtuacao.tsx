@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 
 const areasAtuacao = [
+   
     {
         id: "tributario",
         icon: FaBriefcase,
@@ -81,19 +82,20 @@ const areasAtuacao = [
         ]
     },
     {
-        id: "trabalhista",
-        icon: FaBriefcase,
-        title: "Direito Trabalhista",
+        id: "previdenciario",
+        icon: FaUsers,
+        title: "Direito Previdenciário",
         color: "from-amber-700 to-amber-800",
         services: [
-            "Reconhecimento de Vínculo",
-            "Categorias Especiais",
-            "Salários e benefícios",
-            "Adicionais",
-            "Estabilidade",
-            "Acidente de trabalho",
-            "Assédio",
-            "Demissão irregular"
+            "Aposentadoria urbana e rural",
+            "Aposentadoria por invalidez",
+            "Aposentadoria especial",
+            "Salário-maternidade",
+            "Auxílio-doença (incapacidade)",
+            "Auxílio-acidente",
+            "Pensão por morte",
+            "Benefício assistencial (BPC - LOAS)",
+            "Auxílio-reclusão"
         ]
     },
     {
@@ -130,7 +132,23 @@ const areasAtuacao = [
             "Descaminho e contrabando",
         ]
     },
-  
+    {
+        id: "trabalhista",
+        icon: FaBriefcase,
+        title: "Direito Trabalhista",
+        color: "from-amber-700 to-amber-800",
+        services: [
+            "Reconhecimento de Vínculo",
+            "Categorias Especiais",
+            "Salários e benefícios",
+            "Adicionais",
+            "Estabilidade",
+            "Acidente de trabalho",
+            "Assédio",
+            "Demissão irregular"
+        ]
+    },
+ 
   
 ];
 

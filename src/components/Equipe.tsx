@@ -33,7 +33,7 @@ const advogados = [
 
 export default function Equipe() {
   return (
-    <section className="py-24 bg-gradient-to-b from-stone-50 to-stone-100 relative overflow-hidden">
+    <section className=" bg-gradient-to-b from-stone-50 to-stone-100 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-[0.03]">
         <div className="absolute inset-0" style={{
